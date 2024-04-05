@@ -75,10 +75,10 @@ def build_tree(rows):
         return Node(results=unique_counts(rows))
 
 def print_tree(node, spacing=""):
-    if node.results is not None:
+    if node.results is not None:  # Leaf node
         print(spacing + "Predict", node.results)
         return
-    print(spacing + str(node.attribute) + ': ' + str(node.value) + '?')
+    print(spacing + f"{df.columns[node.attribute]}: {df.columns[node.value]}?")
     print(spacing + '--> True:')
     print_tree(node.true_branch, spacing + "  ")
     print(spacing + '--> False:')
