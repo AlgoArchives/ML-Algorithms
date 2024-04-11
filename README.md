@@ -1,4 +1,5 @@
 ## ML Algorithms
 
-1. Decision Tree
-2. Gradient Boost
+1. Linear Regression
+2. Decision Tree
+3. Gradient Boost
